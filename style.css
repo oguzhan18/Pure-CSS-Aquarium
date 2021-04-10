@@ -1,0 +1,141 @@
+html, body, main, div {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+main {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 100vw;
+  grid-template-rows: 100vh;
+}
+
+.bowl-container {
+  background-color: rgb(9, 25, 114);
+  width: 100vw;
+  height: 100vh;
+  grid-row: 1/-1;
+  grid-column: 1/-1;
+  align-self: center;
+  justify-self: center;
+}
+
+.bowl-top {
+  background-color: rgb(200,200,250);
+  width: 30vh;
+  height: 4vh;
+  grid-row: 1;
+  grid-column: 1/-1;
+  justify-self: center;
+  border-radius: 2vh;
+  border: 1vh solid rgb(220,220,250);
+  transform: translateY(24vh);
+}
+
+.bowl {
+  background-color: rgb(220,220,250);
+  width: 5  0vh;
+  height: 50vh;
+  grid-row: 1/-1;
+  grid-column: 1/-1;
+  align-self: center;
+  justify-self: center;
+  border-radius: 50%;
+}
+
+.bowl-water {
+  background: linear-gradient(to bottom, rgb(200,200,250) 0% 40%, rgb(150,150,250) 40% 90%, rgb(175,100,50) 90% 100%);
+  width: 48vh;
+  height: 48vh;
+  grid-row: 1/-1;
+  grid-column: 1/-1;
+  align-self: center;
+  justify-self: center;
+  border-radius: 50%;
+  display: flex;
+}
+
+.bowl-fish {
+  width: 7vh;
+  height: 2.5vh;
+  display: flex;
+  align-self: center;
+  animation: bowl-fish-swim 6s linear infinite;
+}
+
+
+.bf-body {
+  background-color: rgb(255, 153, 0);
+  width: 6vh;
+  height: 2.5vh;
+  border-radius: 50%;
+}
+
+.bf-eye {
+  background-color: rgb(50,50,50);
+  width: .5vh;
+  height: .5vh;
+  border-radius: 50%;
+  transform: translate(4.5vh,.6vh);
+}
+
+.bf-tail {
+  border-left: 1vh solid rgb(255, 136, 0);
+  border-top: .8vh solid transparent;
+  border-bottom: .8vh solid transparent;
+}
+
+.plants {
+  width: 5vh;
+  height: 8vh;
+  transform: translate(8vh,35.2vh);
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.plant {
+  background-color: green;
+  width: 1vh;
+  height: 5vh;
+  border-radius: 2vh 2vh 0 0;
+}
+
+.plant:nth-of-type(2) {
+  height: 8vh;
+}
+
+@keyframes bowl-fish-swim {
+  0% {transform: translateX(0vh) rotateY(90deg);}
+  25% {transform: translateX(20.5vh) rotateY(0deg) scale(1.5);}
+  50% {transform: translateX(41vh) rotateY(90deg);}
+  75% {transform: translateX(20.5vh) rotateY(180deg) scale(.75);}
+  100% {transform: translateX(0vh) rotateY(270deg);}
+}
+.HM_moss{
+    float: left;
+}
+.moss{
+  background-color: RGB(127, 170, 68);
+  width: 6vh;
+  height: 55vh;
+  border-radius: 23vh 22vh 0 0 ;
+  position: absolute;
+  bottom: 0%;
+  left:1%;
+}
+.moss1{
+  float: left;
+  background-color: RGB(127, 170, 68);
+  width: 6vh;
+  height: 55vh;
+  border-radius: 23vh 22vh 0 0 ;
+  position: absolute;
+  bottom: 0%;
+  right:1%;
+}
